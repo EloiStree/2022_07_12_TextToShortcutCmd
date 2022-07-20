@@ -20,12 +20,12 @@ public abstract class AbstractShortcutIntepretor : I_ShortcutIntepreter
         TryTranslate(out bool result, in shortcut);
         return result;
     }
-    public abstract bool CanItUnderstand(in I_ShortcutAsTextGet shortcut);
+    public abstract bool CanInterpreterUnderstand(in I_ShortcutAsTextGet shortcut);
     public abstract void TryTranslate(out bool succedToTranslate, in I_ShortcutAsTextGet shortcut);
 
     public string GetInterpreterDescriptionName()
     {
-        return m_interpreterName;
+        return m_interpreterName;   
     }
 
     public string GetInterpreterUniqueID()

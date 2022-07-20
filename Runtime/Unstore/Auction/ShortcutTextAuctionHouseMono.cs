@@ -23,7 +23,7 @@ public class ShortcutTextAuctionHouseMono : MonoBehaviour
             if (sinter[i] != null && sinter[i].IsDefined())
             {
                 sinter[i].GetInterpreter(out interpreter);
-                if (interpreter != null && interpreter.CanItUnderstand(shortcut)) {
+                if (interpreter != null && interpreter.CanInterpreterUnderstand(shortcut)) {
                     try
                     {
                         Debug.Log("S: " + shortcut.GetText() + "  I:"+ interpreter.GetInterpreterDescriptionName());
@@ -56,7 +56,7 @@ public class ShortcutTextAuctionHouseMono : MonoBehaviour
             if (sinter[i] != null && sinter[i].IsDefined())
             {
                 sinter[i].GetInterpreter(out interpreter);
-                if (interpreter != null && interpreter.CanItUnderstand(shortcut))
+                if (interpreter != null && interpreter.CanInterpreterUnderstand(shortcut))
                 {
                     interpreters.Add(interpreter);
                 }
@@ -73,7 +73,7 @@ public class ShortcutTextAuctionHouseMono : MonoBehaviour
             if (sinter[i] != null && sinter[i].IsDefined())
             {
                 sinter[i].GetInterpreter(out interpreter);
-                if (interpreter != null && interpreter.CanItUnderstand(shortcut))
+                if (interpreter != null && interpreter.CanInterpreterUnderstand(shortcut))
                 {
                     found = true;
                     return;

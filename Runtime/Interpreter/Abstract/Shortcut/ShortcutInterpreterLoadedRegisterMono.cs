@@ -39,7 +39,6 @@ public class ShortcutInterpreterLoadedRegisterMono : MonoBehaviour
         RemoveDoubleThenSort();
         m_onInterpreterAdded.Invoke();
     }
-
 }
 
 

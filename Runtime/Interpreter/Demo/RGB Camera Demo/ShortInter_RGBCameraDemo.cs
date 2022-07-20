@@ -14,7 +14,7 @@ public class ShortInter_RGBCameraDemo : AbstractShortcutIntepretor
 
     }
 
-    public override bool CanItUnderstand(in I_ShortcutAsTextGet shortcut)
+    public override bool CanInterpreterUnderstand(in I_ShortcutAsTextGet shortcut)
     {
         string text = shortcut.GetText().ToLower();
         if (text.Length>4 && text[0] == 'r' && text[1] == 'g' && text[2] == 'b') {

@@ -32,7 +32,7 @@ public class LoadAllShortcutInterpetersInResourcesFolderMono : MonoBehaviour
                 inter = g.GetComponentInChildren<AbstractShortcutIntepreterMono>();
                 int priority = m_defaultPriority;
 
-                    ShortInterpretor_PriorityDataMono p = prefabs[i].GetComponentInChildren<ShortInterpretor_PriorityDataMono>();
+                    InterpreterEntity_Priority p = prefabs[i].GetComponentInChildren<InterpreterEntity_Priority>();
                     if (p) priority = p.m_priorityValueInQueue;
                     m_register.AddInterpreter(priority, true, inter);
                     g.transform.parent = m_parent;
